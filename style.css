@@ -1,0 +1,147 @@
+html {
+    width:100%
+}
+
+html,
+body,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    background-color:  hsl(218, 28%, 13%);
+    color:  hsl(0, 0%, 100%);
+}
+
+section {
+    display: block;
+}
+
+#card {
+    margin-top: 5%;
+    width: 100%;
+    padding: 0 7.5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+}
+
+.profile{
+    display: flex;
+    margin: 7% 0;
+    align-items: center;
+}
+
+.profile img {
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-right: 6%;
+}
+
+p #name {
+    font-size: 0.9em;
+}
+
+p #post-held {
+    font-size: 0.75em;
+}
+
+#b-card {
+    display: flex;
+    flex-direction: column;
+    background-color:  hsl(219, 30%, 18%);
+    padding: 12% 8% 3% 8%;
+    font-size: 1em;
+}
+
+#pix {
+    position: absolute;
+    left: 6%;
+    top: 382%;
+    z-index: -1;
+}
+
+
+
+footer {
+    background-color: hsl(216, 53%, 9%);
+    padding: 8% 5% 5%;
+    margin-top:20%;
+    font-size: 0.95em;
+}
+
+#f-logo {
+    height: 40px;
+}
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+#location {
+    display: flex;
+    align-items: flex-start;
+}
+#location i {
+    padding-right: 15px;
+}
+
+#phone-email {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+#phone-email i {
+    padding-right: 16px;
+}
+
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 60px;
+}
+
+@media (max-width:760px) {
+    #container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #f-logo,
+    
+    #contact,
+    #lists,
+    #social-media {
+        margin: 7%;
+    }
+
+
+
+    #social-media{
+        align-self: center;
+    }
+
+    #quote {
+        position: static;
+        margin: 20% 0 0 10%;
+    }
+    #card {
+        display: block;
+    }
+    #b-card {
+        margin:6%;
+    }
+}
